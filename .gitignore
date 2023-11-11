@@ -24,3 +24,4 @@ dependencies.lock
 ED*.h
 ES*.h
 examples/private_*/
+components/epdiy

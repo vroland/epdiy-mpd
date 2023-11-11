@@ -9,6 +9,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: 'recursive'
+      - name: Clone epdiy
+        run: |
+          mkdir -p components && cd components
+          git clone https://github.com/vroland/epdiy.git epdiy
       - uses: 'espressif/esp-idf-ci-action@main'
         with:
           esp_idf_version: release-v5.1
